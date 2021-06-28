@@ -1,3 +1,6 @@
 [submodule "final-assignment/data-structures"]
 	path = final-assignment/data-structures
 	url = https://github.com/hamzazahidulislam/data-structures
+[submodule "final-assignment/contact-cli"]
+	path = final-assignment/contact-cli
+	url = https://github.com/hamzazahidulislam/contact-cli
