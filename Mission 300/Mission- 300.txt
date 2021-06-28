@@ -1,0 +1,22 @@
+
+
+
+
+Extra Long Factorials  to Beautiful Binary String
+
+
+
+
+
+
+Codeforces (All 100) - [https://a2oj.com/ladder?ID=11](https://a2oj.com/ladder?ID=11) (100)
+
+ Codeforces (51-100) - [https://a2oj.com/ladder?ID=12](https://a2oj.com/ladder?ID=12)  (50)
+ Hackerrank - 100 (Around) - [https://www.hackerrank.com/domains/algorithms?badge_type=problem-solving&filters[subdomains][]=search&filters[subdomains][]=arrays-and-sorting&filters[subdomains][]=strings&filters[subdomains][]=implementation&filters[difficulty][]=easy&filters[skills][]=Problem Solving (Intermediate)&filters[skills][]=Problem Solving (Basic)](https://www.hackerrank.com/domains/algorithms?badge_type=problem-solving&filters%5Bsubdomains%5D%5B%5D=search&filters%5Bsubdomains%5D%5B%5D=arrays-and-sorting&filters%5Bsubdomains%5D%5B%5D=strings&filters%5Bsubdomains%5D%5B%5D=implementation&filters%5Bdifficulty%5D%5B%5D=easy&filters%5Bskills%5D%5B%5D=Problem%20Solving%20%28Intermediate%29&filters%5Bskills%5D%5B%5D=Problem%20Solving%20%28Basic%29)
+
+[Uri online judge (50 problems)](https://www.notion.so/Uri-online-judge-50-problems-e5a585ca7ab943cea55427c929989489)
+
+
+
+
+
