@@ -1250,3 +1250,11 @@ console.clear()
 // console.log(v!=!true)
 const os = require("os");
 console.log(os.cpus());
+
+let errors = [{param:"haa",msg:"hello"},{param:"hasa",msg:"hello"}];
+
+
+const error  = {}
+
+errors.forEach(item => (error[item.param] = item.msg))
+console.log(error);
