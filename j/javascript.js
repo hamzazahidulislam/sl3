@@ -1248,13 +1248,17 @@ console.clear()
 // console.log(opArgs.where);
 // let  v= true
 // console.log(v!=!true)
-const os = require("os");
-console.log(os.cpus());
+----
+// const os = require("os");
+// console.log(os.cpus());
 
-let errors = [{param:"haa",msg:"hello"},{param:"hasa",msg:"hello"}];
+// let errors = [{param:"haa",msg:"hello"},{param:"hasa",msg:"hello"}];
 
 
-const error  = {}
+// const error  = {}
 
-errors.forEach(item => (error[item.param] = item.msg))
-console.log(error);
+// errors.forEach(item => (error[item.param] = item.msg))
+// console.log(error);
+let add = (a,b) => a+b;
+let printoutput = (output) => console.log(output);
+printoutput(add(5,5))
