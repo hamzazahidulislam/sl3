@@ -1248,7 +1248,6 @@ console.clear()
 // console.log(opArgs.where);
 // let  v= true
 // console.log(v!=!true)
-----
 // const os = require("os");
 // console.log(os.cpus());
 
@@ -1259,6 +1258,81 @@ console.clear()
 
 // errors.forEach(item => (error[item.param] = item.msg))
 // console.log(error);
-let add = (a,b) => a+b;
-let printoutput = (output) => console.log(output);
-printoutput(add(5,5))
+// let add = (a,b) => a+b;
+// let printoutput = (output) => console.log(output);
+// printoutput(add(5,5))
+//Problem solving seerToMon by using function
+// function seerToMon(seer){
+//     if(seer==-1){//Error Messsage here...
+//         return "Invalid value for seer"
+//     }
+//     const mon = seer / 40;
+//     return mon; // return function argument
+// }
+// const mySeer = 200;
+// const MonIs = seerToMon(mySeer); //func call
+// console.log("Mon is",MonIs);
+
+
+// function totalSales(shirt, pant, shoes) {
+//     if(shirt<=0 && pant<=0 && shoes<=0){
+//         return "give a valid value is greater then 0";
+//     }
+//     const shirtPrice = 100;
+//     const pantPrice = 200;
+//     const shoesPrice = 500;
+//     const shirtQuantity = shirtPrice * shirt;
+//     const pantQuantity = pantPrice * pant;
+//     const shoesQuantity = shoesPrice * shoes;
+//     const total =  shirtQuantity + pantQuantity + shoesQuantity;
+//     return  total ;
+// }
+// console.log(totalSales(1,1,1));
+
+// function deliveryCost(quantity){
+//     const firstPerProduct = 100;//for first 100 products
+//     const secondPerProduct = 80;//for second 100 products
+//     const thirdPerProduct = 50;//for greater then 200 products
+//     if(quantity<=0){
+//         return "Invalid Quantity";//this is error
+//     }
+//     if(quantity<=100){//this for 1 to 100 products
+//         const result = quantity * firstPerProduct;
+//         return result;
+//     }else if(quantity<=200){//this for 101 to 200 products
+//         const previousProduct = 100 * firstPerProduct
+//         const restProduct = quantity - firstPerProduct;
+//         const secondPerProduct2 = restProduct * secondPerProduct;
+//         const totalQuantity = previousProduct + secondPerProduct2;
+//         return totalQuantity;
+//     }else{//this for greater then 200 products
+//         const previousProduct = 100 * 80;
+//         const previousProduct2 = 100 * 100;
+//         const restProduct = quantity - 200 ;
+//         const secondPerProduct2 = restProduct * thirdPerProduct;
+//         const totalQuantity = previousProduct + secondPerProduct2 + previousProduct2;
+//         return totalQuantity;
+//     }
+    
+// }
+// console.log(deliveryCost(201));
+
+// function perfectFriend(friends){
+//     const firstFriend = friends
+//     if(!friends.length){
+//         return "Empty List not accpeted"
+//     }
+//     if(typeof friends != 'undefined' && friends.length > 5){
+//         return "Empty List not accpeted"
+//     }
+//     for(let i = 0; i < friends.length; i++){
+//         if(friends[i].length==5){
+//             return firstFriend[i]
+//         }else{
+//             return "must be greater 5 character"
+//         }
+//     }
+    
+// }
+// let names = ["react"]
+// console.log(perfectFriend(names));
