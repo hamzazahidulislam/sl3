@@ -42,7 +42,7 @@ console.clear();
 // console.log(!!permissionFields.canManageProducs);
 //Problem solving seerToMon by using function
 function seerToMon(seer: Number) {
-  if (seer == -1) {
+  if (seer <=0) {
     //Error Messsage here...
     return 'Invalid value for seer';
   }
