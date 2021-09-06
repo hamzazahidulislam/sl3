@@ -3,5 +3,41 @@
     "files.associations": {
         "*.js": "javascript",
         "iostream": "c"
-    }
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.preserveFocus": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.temporaryFileName": "",
+    "code-runner.ignoreSelection": true,
+    "code-runner.showRunCommandInEditorContextMenu": false,
+    "code-runner.showExecutionMessage": false,
+    "code-runner.saveFileBeforeRun": false,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.terminalRoot": "/",
+    "tabnine.experimentalAutoImports": true,
+    "guides.enabled": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Cygwin": {
+            "path": "C:\\cygwin64\\bin\\bash.exe",
+            "args": [
+                "--login"
+            ]
+        }
+    },
 }
