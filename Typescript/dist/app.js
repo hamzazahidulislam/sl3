@@ -1,3 +1,4 @@
+"use strict";
 /** @format */
 console.clear();
 // function addachivment(data: Person, acv: string): void {
@@ -13,27 +14,27 @@ console.clear();
 //   console.log(person.note);
 // }
 function err() {
-  while (true) {}
+    while (true) { }
 }
 function addsomthing(data) {
-  data.name = '';
-  return data;
+    data.name = '';
+    return data;
 }
 const person = {
-  name: 'hamza',
-  age: 19,
-  achievement: ['coding', 'dancing'],
-  ismerried: false,
-  note: '',
-  error: err,
+    name: 'hamza',
+    age: 19,
+    achievement: ['coding', 'dancing'],
+    ismerried: false,
+    note: '',
+    error: err,
 };
 // addachivment(person, 'acting');
 // changemarriedStatus(person.ismerried);
 // addextra({
 //   extra: 'i am a programmer',
 // });
-const res = addsomthing(person);
+let res = addsomthing(person);
 if (typeof res !== 'undefined' && res !== null) {
-  res.age = 12;
+    res.age = 12;
 }
 console.log(person);
