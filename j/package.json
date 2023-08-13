@@ -2,14 +2,14 @@
   "name": "j",
   "version": "1.0.0",
   "description": "",
-  "main": "javascript.js",
+  "main": "plugin.js",
   "scripts": {
-    "start": "nodemon javascript.js"
+    "start": "nodemon plugin.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^3.0.1"
   }
 }
