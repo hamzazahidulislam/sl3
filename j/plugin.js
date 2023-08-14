@@ -46,11 +46,16 @@ fs.readFile('XN350_20230529123843447.txt', (err, inputD) => {
   const arraySplit = [...converted]
 
   console.log(arraySplit)
-
+  const ObjectArray = []
   for (let index = 0; index < arraySplit.length; index++) {
     const element = arraySplit[index]
-    console.log(element)
+    const object = { ugu: element }
+    ObjectArray.push([index, element])
+    // we try to build a loop of array elements that array key and value array of array
+    // console.log((object['prop' + index] = element))
   }
+
+  console.log(ObjectArray);
 
   function Object(
     Object1,
@@ -89,4 +94,26 @@ fs.readFile('XN350_20230529123843447.txt', (err, inputD) => {
   // console.log(personTwo)
 
   // crate array loop for object cration
+  let obj = { first: 'John', last: 'Doe' }
+  // Object.keys(obj).forEach(function (key) {
+  //   console.log(key, obj[key])
+  // })
+  // this is array convert into object
+  // const array = [
+  //   ['cardType', 'iDEBIT'],
+  //   ['txnAmount', '17.64'],
+  //   ['txnId', '20181'],
+  //   ['txnType', 'Purchase'],
+  //   ['txnDate', '2015/08/13 21:50:04'],
+  //   ['respCode', '0'],
+  //   ['isoCode', '0'],
+  //   ['authCode', ''],
+  //   ['acquirerInvoice', '0'],
+  //   ['message', ''],
+  //   ['isComplete', 'true'],
+  //   ['isTimeout', 'false']
+  // ]
+
+  // const obj2 = Object.fromEntries(array)
+  // console.log(obj2)
 })
