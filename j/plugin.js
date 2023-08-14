@@ -8,9 +8,9 @@ const { Console, log } = require('console')
 // console.log('console')
 
 const fs = require('fs')
-fs.readFile('XN350_20230529123843447.txt', (err, inputD) => {
+fs.readFile('XN350_20230529123843447.txt', async (err, inputD) => {
   if (err) throw err
-  //   console.log(inputD.toString())
+  // console.log(await inputD.toString())
   let text = inputD.toString()
   //   console.log(text.search(/WBC/))
   //   console.log(text.replace('', '').replace('', '').replace('☻', ''))
@@ -55,7 +55,7 @@ fs.readFile('XN350_20230529123843447.txt', (err, inputD) => {
     // console.log((object['prop' + index] = element))
   }
 
-  console.log(ObjectArray);
+  console.log(ObjectArray)
 
   function Object(
     Object1,
@@ -116,4 +116,41 @@ fs.readFile('XN350_20230529123843447.txt', (err, inputD) => {
 
   // const obj2 = Object.fromEntries(array)
   // console.log(obj2)
+
+  console.log('hi')
+  const chokidar = require('chokidar')
+
+  // One-liner for current directory
+  chokidar
+    .watch('./test', {
+      ignoreInitial: true
+    })
+    .on('add', (path) => {
+      console.log(path)
+    })
+
+  // let string = `test\g.ts Stats {
+  //   dev: 4201496056,
+  //   mode: 33206,
+  //   nlink: 1,
+  //   uid: 0,
+  //   gid: 0,
+  //   rdev: 0,
+  //   blksize: 4096,
+  //   ino: 18577348463041812,
+  //   size: 0,
+  //   blocks: 0,
+  //   atimeMs: 1692006681576.5693,
+  //   mtimeMs: 1692006681576.5693,
+  //   ctimeMs: 1692006681576.5693,
+  //   birthtimeMs: 1692006681576.5693,
+  //   atime: 2023-08-14T09:51:21.577Z,
+  //   mtime: 2023-08-14T09:51:21.577Z,
+  //   ctime: 2023-08-14T09:51:21.577Z,
+  //   birthtime: 2023-08-14T09:51:21.577Z
+  // }`
+
+  // splits every letter in string into an item in our array
+  // let newArray = string.split(' ')
+  // console.log(newArray)
 })
