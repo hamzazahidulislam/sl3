@@ -12,7 +12,6 @@ import Watcher from 'watcher'
 // console.log('console')
 
 // const fs = require('fs')
-import axios from 'axios'
 import fs from 'fs'
 fs.readFile('XN350_20230529123843447.txt', async (err, inputD) => {
   if (err) throw err
@@ -49,21 +48,26 @@ fs.readFile('XN350_20230529123843447.txt', async (err, inputD) => {
     //   console.log('line gap')
     //   console.log(line)
     // }
-    // hold uniqueID
-    if (line.length >= 300) {
-      // console.log('line gap')
-      const PipeRemove = line.toString().split('|')
-      const PipeSort = PipeRemove[(0, 3)]
-      const RemoveFreeSpace = PipeSort.replace(/[^\w\r\n]+/).toString()
-      const GetNumOnly = RemoveFreeSpace.replace(/^\D+\W*/g, '').toString()
-      const RemoveLastCircumflex =
-        GetNumOnly.replace(/\W*[ A-Za-z]+/g).toString()
-      const RemoveLast = RemoveLastCircumflex.match(numberPattern).toString()
-      uniqueId.push(RemoveLast)
-      // console.log(uniqueId.push(RemoveLast))
-    }
+    // hold
+    // if (line[(6, 3)]) {
+    //   uniqueId.push(line[(6, 3)])
+    // }
+    // console.log(line[6], 'you goted')
+    // if (line.length >= 300) {
+    //   // console.log('line gap')
+    //   const PipeRemove = line.toString().split('|')
+    //   const PipeSort = PipeRemove[(0, 3)]
+    //   const RemoveFreeSpace = PipeSort.replace(/[^\w\r\n]+/).toString()
+    //   const GetNumOnly = RemoveFreeSpace.replace(/^\D+\W*/g, '').toString()
+    //   const RemoveLastCircumflex =
+    //     GetNumOnly.replace(/\W*[ A-Za-z]+/g).toString()
+    //   const RemoveLast = RemoveLastCircumflex.match(numberPattern).toString()
+    //   uniqueId.push(RemoveLast)
+    //   // console.log(uniqueId.push(RemoveLast))
+    // }
   })
-  console.log(uniqueId[0])
+  
+  console.log(allLines[6].split('|',)[3], 'yes goted')
 
   // this line of code are use for find second uniqueId
   const uniqueId2 = allLines[2].split('|')[4]
@@ -97,7 +101,7 @@ fs.readFile('XN350_20230529123843447.txt', async (err, inputD) => {
       }
     }
   })
-  console.log(ObjectArrayMain)
+  // console.log(ObjectArrayMain)
 
   // this code try creat a foler if folder doesn't exist
   const DemoDbFilePath = `C:\\Users\\Hp\\Desktop\\sl3\\j`
@@ -117,24 +121,24 @@ fs.readFile('XN350_20230529123843447.txt', async (err, inputD) => {
   )
   const folderPath = './completed'
   // this code help me to rename file now need to transfer this file
-  console.log('Creating a new file...')
-  const newFile = fs.writeFileSync(
-    `./completed/${uniqueId[0] + `+` + uniqueId2}.txt`,
-    text
-  )
-  axios.post('http://localhost:5000/').catch(function (error) {
-    if (error.response) {
-      console.log(error.response.data)
-      console.log(error.response.status)
-      console.log(error.response.headers)
-    }
-  })
+  // console.log('Creating a new file...')
+  // const newFile = fs.writeFileSync(
+  //   `./completed/${uniqueId[0] + `+` + uniqueId2}.txt`,
+  //   text
+  // )
+  // axios.post('http://localhost:5000/').catch(function (error) {
+  //   if (error.response) {
+  //     console.log(error.response.data)
+  //     console.log(error.response.status)
+  //     console.log(error.response.headers)
+  //   }
+  // })
 
-  fs.readdir('./getFileList', (err, files) => {
-    files.forEach((file) => {
-      console.log(file)
-    })
-  })
+  // fs.readdir('./getFileList', (err, files) => {
+  //   files.forEach((file) => {
+  //     console.log(file)
+  //   })
+  // })
   // this code help me creat a new foler
   // const fullPath = path.join(folderPath, newFile)
   // fs.renameSync(fullPath, path.join(folderPath, newFile))
@@ -143,8 +147,8 @@ fs.readFile('XN350_20230529123843447.txt', async (err, inputD) => {
   // const folderPath = './test'
 
   // read all files in the directory
-  let filesArr = fs.readdirSync(folderPath)
-  console.log(filesArr)
+  // let filesArr = fs.readdirSync(folderPath)
+  // console.log(filesArr)
   // this is production code end
   // console.log(uniqueId[0])
 
