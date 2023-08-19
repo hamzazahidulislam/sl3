@@ -13,16 +13,17 @@ import Watcher from 'watcher'
 
 // const fs = require('fs')
 import fs from 'fs'
-fs.readFile('XN350_20230529123843447.txt', async (err, inputD) => {
+fs.readFile('./COBASC311_20230510010303640.txt', async (err, inputD) => {
   if (err) throw err
   // console.log(await inputD.toString())
   let text = inputD.toString()
-  //   console.log(text.search(/WBC/))
+  // console.log(text.search(/WBC/), 'shofiul ')
   //   console.log(text.replace('', '').replace('', '').replace('☻', ''))
-
+  // console.log(text, '20 line')
   const p = 'Dog dog'
   // we removed the unreadble charaters from this file
-  const regex = /|/gi
+  const regex = /||/gi
+  console.log(regex,"")
   // console.log(text.replace(regex, ''))
 
   const file = inputD.toString().replace(regex, '')
@@ -30,7 +31,7 @@ fs.readFile('XN350_20230529123843447.txt', async (err, inputD) => {
   // define a range beetween 40 to 56
   // const RangeRegex = /.*/
   // const range = file.search(RangeRegex)
-  // console.log(file)
+  // console.log(file,"after remove regex")
 
   const allLines = file.split(/\r\n|\n/)
 
@@ -42,7 +43,7 @@ fs.readFile('XN350_20230529123843447.txt', async (err, inputD) => {
   // console.log(allLines)
   var numberPattern = /\d+/g
   var uniqueId = [] //this is hold our unique id
-
+  console.log(allLines[0].split())
   allLines.forEach((line) => {
     // if (line.length >= 40 && line.length <= 200) {
     //   console.log('line gap')
@@ -66,13 +67,13 @@ fs.readFile('XN350_20230529123843447.txt', async (err, inputD) => {
     //   // console.log(uniqueId.push(RemoveLast))
     // }
   })
-  
-  console.log(allLines[6].split('|',)[3], 'yes goted')
+
+  // console.log(allLines[6].split('|',)[3], 'yes goted')
 
   // this line of code are use for find second uniqueId
-  const uniqueId2 = allLines[2].split('|')[4]
+  const uniqueId2 = allLines[0].split('|')
   // hold uniqueID
-  console.log(uniqueId2)
+  // console.log(uniqueId2)
   const ObjectArrayMain = []
   allLines.forEach((line) => {
     if (line.length >= 40 && line.length <= 200) {
