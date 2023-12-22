@@ -14,6 +14,7 @@ while (!stack.isEmty()) {
 }
 // console.log(revercedText)
 
+// console.log(revercedText)
 
 // javascript  Arry stcak method
 const text1 = 'HELLO'
